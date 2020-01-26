@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S.M.C.R.</title>
+</head>
+
+<body>
+    <h1>Contáctenos</h1>
+
+    <!-- autocomplete para no autocompletar datos en memoria-->
+    <form method="POST" action="logueo.html" autocomplete="off" enctype="multipart/form-data">
+        
+        <!-- requered se utiliza para enviar campos llenos no vacios-->
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="ingrese nombre" name="nombre" required> <br> 
+        
+        <!-- atributo checked "solo en radio" para que aparesca marcado uno por defecto-->
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="sexo" checked> Masculino
+        <input type="radio" name="sexo"> Femenino   <br>
+        
+        <label for="pais">Pais</label>
+        <!-- combo box -->
+        <select name="pais" id="pais">
+            <option value="0">Perú</option>
+            <option value="1">Argentina</option>
+            <option value="2">Brasil</option>
+            <option value="3">Corea</option>
+        </select> <br> 
+
+        <!-- requered se utiliza para enviar campos llenos no vacios-->
+        <label for="file">Archivo</label>
+        <!-- cuando se tenga un imput de tipo file al form se le agrega enctype -->
+        <input type="file" id="file" placeholder="" name="file" required> <br>
+       
+        <!-- Text area -->
+        <label for="nota">Nota Adicional</label> <br>
+        <textarea name="nota" id="nota" cols="30" rows="10"></textarea> <br>
+
+        <input type="checkbox">He leido los <a href="terminoycondiciones.html" target="_blank">Terminos y condiciones.</a> <br>
+
+        <button type="submit" >Enviar</button>
+        <button type="reset">Restablecer</button>
+        <button type="button">Ver más</button>
+    </form>    
+
+</body>
+
+</html>

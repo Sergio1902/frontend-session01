@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S.M.C.R.</title>
+</head>
+<style>
+h2
+{
+    text-align: center;
+}
+legend{
+    text-align: center;
+}
+fieldset{
+    width:625px;
+    height:100%;
+}
+</style>
+<body>
+
+    <h2>Alienta a la Selección en la Copa América 2019</h2> <br>
+        <form action="tarea2.html" method="POST" enctype="multipart/form-data">
+
+               <fieldset>
+                   <legend >Ingresa tus datos</legend> <br>
+                    <label for="name">Nombre del Participante:</label> 
+                    <input type="text" id="name" placeholder="Nombre" title="Solo Letras" required pattern="[A-Za-z\s]{1,50}" > 
+                    <br><br>
+                    
+                    <label for="Apellido">Apellido del Participante:</label>
+                    <input type="text" placeholder="Apellido" title="Solo Letras" required pattern="[A-Za-z\s]{1,50}"><br><br>
+                   
+                    <label for="dni">Ingrese DNI:</label>
+                    <input type="text" placeholder="DNI" id="dni" title="Solo Numeros" required pattern="[0-9]{8}" lang="8"><br><br>
+                    
+                    
+                    <label for="sex">Sexo:</label> <br><br>
+                       
+                            <input type="radio" name="sex" checked>Masculino
+                            <input type="radio" name="sex">Femenino  <br><br>
+                                    
+                    <label for="number">Numero de Celular:</label>
+                    <input type="text" id="number" title="Solo Numeros" required pattern="[0-9]{9}" ><br><br>
+                   
+                </fieldset>
+                    <br>
+                <fieldset> <br>
+                    <label for="email">Ingrese Email:</label>
+                    <input type="email" id="email" title="Dato incorrecto" required ><br><br>
+                   
+                    <label for="">Ingrese Foto del Hincha:</label>
+                    <input type="file" required><br><br>
+                    
+                </fieldset> 
+                <br>
+
+                    <label for="message">Mensaje de Aliento:</label>
+                    <textarea name="message" id="message" cols="40" rows="20" required></textarea> <br><br>
+                    
+                   
+                    <button type="submit"  >Enviar</button>  
+                    <button type="reset">Restablecer</button>
+               
+
+             
+
+
+
+            
+
+
+
+
+
+        </form>
+
+
+
+
+</body>
+</html>
