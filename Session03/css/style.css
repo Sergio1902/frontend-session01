@@ -1,0 +1,33 @@
+/* selector - atributo - valor*/
+/* font ninja extension para saber el tipo de fuente de las paginas web*/
+
+
+body{
+    background-color: aqua;  
+}
+
+
+/* las mas usadas serif - sans serif - monospace tipo de fuente - familia generica*/
+h1{
+    color: red;   /*color de fondo*/
+    /*font-family: serif;*/
+    font-family: 'Arvo', serif;   
+}
+h2{
+    /*font-family: sans-serif;*/
+    font-family: 'Source Serif Pro', serif;
+}  
+span{
+    /*font-family: monospace;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+em{
+    /*font-family: cursive;*/
+    font-family: 'Roboto', sans-serif;
+}
+small{
+    /*font-family: fantasy;*/
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}

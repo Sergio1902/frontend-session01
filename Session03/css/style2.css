@@ -1,0 +1,55 @@
+/* protocolo para agregar una fuente a tu pagina web */
+/* esta fuente esta dentro de mis carpetas internas*/
+
+@font-face{
+    /* nombre de la fuente */
+    font-family: barlow;
+    /* diferentes extensiones de las fuentes*/
+    src: url("../font/barlow-bold-webfont.eot")     format("embedded-opentype"),
+         url("../font/barlow-bold-webfont.woff")    format("woff"),
+         url("../font/barlow-bold-webfont.woff2")   format("woff2"),
+         url("../font/barlow-bold-webfont.ttf")     format("truetype"),
+         url("../font/barlow-bold-webfont.svg")     format("svg");
+    /* peso de la fuente */
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: barlow;
+    src: url("../font/barlow-thin-webfont.eot")     format("embedded-opentype"),
+         url("../font/barlow-thin-webfont.woff")    format("woff"),
+         url("../font/barlow-thin-webfont.woff2")   format("woff2"),
+         url("../font/barlow-thin-webfont.ttf")     format("truetype"),
+         url("../font/barlow-thin-webfont.svg")     format("svg");
+    font-weight: 100;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: "RBNo31";
+    src: url("../font"); 
+    src: url("../font?#iefix") format("embedded-opentype"), 
+      url("../font/RBNo31-Light.otf") format("opentype"), 
+      url("../font/RBNo31-Light.svg") format("svg"), 
+      url("../font/RBNo31-Light.ttf") format("truetype"), 
+      url("../font/RBNo31-Light.woff") format("woff"), 
+      url("../font/RBNo31-Light.woff2") format("woff2"); 
+    font-weight: 300;
+    font-style: normal;
+  }
+
+h1
+{
+    font-family: barlow;
+    font-weight: 700;
+}
+p{
+    font-family: barlow;
+    font-weight: 100;
+}
+h2{
+    font-family: "RBNo31";
+    font-weight: 300;
+}
