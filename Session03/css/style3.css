@@ -1,0 +1,10 @@
+section{
+    display: -webkit-box;
+    display: flex;
+}
+.primero{
+    background-color: royalblue;
+}
+.segundo{
+    background-color: seagreen;
+}
