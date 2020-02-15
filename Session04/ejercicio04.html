@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio M.C.R.</title>
+    <style>
+       
+    /* selector de atributos "ATRIBUTOS" */    
+
+    /*  [class*="btn"]  { */
+        [class="btn"]  {
+            background-color: black;
+            color: blanchedalmond;
+            text-decoration: none;
+            /* para convertirlo en elemento de bloque y poder utilizar padding */
+            /* generalmente la etiqueta a es elemento de linea*/
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        a:hover{
+            background-color:darkslategray;
+            color:white;
+        }
+
+        /* para agrupar atributos similares que empiecen con la misma palabra*/
+        [href^="https"] {
+            border: 3px solid blue;
+        }
+        /* para agrupar atributos similares que empiecen con la misma palabra*/
+        [href$=".pdf"] {
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <article>
+
+        <h1>Devmaster</h1>
+
+        <p class="parrafo-1">Lorem quia onsectetur adipisicing elit. mollitia, voluptatum id, dolorum culpa cumque? Et, autem? Voluptates voluptas eveniet ut iste dicta neque. ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ipsa alias quidem pariatur expedita quia mollitia, voluptatum id, dolorum culpa cumque? Et, autem? Voluptates voluptas eveniet ut iste dicta neque.</p>
+        
+        <p class="parrafo-2">Lorem quia mollitia, voluptatum id, onsectetur adipisicing elit. dolorum culpa cumque? Et, autem? Voluptates voluptas eveniet ut iste dicta neque. ipsum dolor sit amet, consectetur adipisicing elit. Facilis, ipsa alias quidem pariatur expedita quia mollitia, voluptatum id, dolorum culpa cumque? Et, autem? Voluptates voluptas eveniet ut iste dicta neque.</p>
+       
+        <p class="parrafo-3">Lorem quia mollitia, voluptatum id, dolorum culpa cumque? Et, autem? Voluptates voluptas eveniet ut iste dicta neque. ipsum onsectetur adipisicing elit. dolor sit amet, consectetur adipisicing elit. Facilis, ipsa alias quidem pariatur expedita quia mollitia, voluptatum id, dolorum culpa cumque? Et, autem? Voluptates voluptas eveniet ut iste dicta neque.</p>
+        
+        <a class="btn" href="https://es-la.facebook.com/">Facebook</a>
+        <a class="btn" href="https://www.instagram.com/?hl=es-la">Instagram</a>
+        <a class="btn" href="PDF/test.pdf">PDF</a>
+
+    </article>
+
+
+
+
+</body>
+</html>

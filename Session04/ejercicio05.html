@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERGIO M.C.R.</title>
+    <style>
+        /* elemento padre que contiene a los elementos hijos */
+        /* debe llevar display flex */
+        ul{
+            display: flex;
+            padding: 0 0;
+            margin: 0 0;
+            /* para quitar la viñeta o tipo de viñeta*/
+            list-style-type: none;
+            
+        }
+        li{
+            margin-right: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: brown;
+
+        }
+        a:hover{
+            color: chocolate;
+        }
+        /* seudo clases */
+            /* seleccionar al cuarto hijo del padre*/
+            /* 
+            ul li:nth-child(4)    {
+                background-color: darkkhaki;
+            }
+
+            /* seleccionar solo los pares*/
+            /*
+            ul li:nth-child(even){
+                background-color: darkkhaki;
+            }
+
+             /* seleccionar solo los impares*/
+            /*
+            ul li:nth-child(odd){
+                background-color: darkkhaki;
+            }
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li ><a href="">Inicio</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Equipo</a></li>
+            <li><a href="">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

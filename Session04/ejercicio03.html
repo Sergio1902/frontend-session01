@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio M.C.R.</title>
+    <style>
+    /* diferentes selectores de combinacion */
+        .cabecera h1    {
+            /* propiedades */
+            text-align: center;
+            text-decoration: underline;
+            color:tomato;
+            }
+        .contenido p    {
+            /* propiedades */  
+            color: indigo;
+            }
+
+    /* selector hijo directo*/
+        /* signo mayor afecta directamente al hijo*/
+        p > a   {
+         color: turquoise;
+        }
+        /* sin signo afecta a toda etiqueta interna*/
+        p a     {
+        color: turquoise;
+        }
+    /* selector adyacente*/
+       /* a + p {
+        text-transform: uppercase;
+        } */
+    /* selector procedente*/
+        a ~ p {
+        text-transform: uppercase;
+        }
+</style>
+
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Devmaster</h1>
+    </header>    
+    <main class="contenido">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, ad? Obcaecati aut excepturi rerum molestiae repellendus fugiat magni quam soluta! Id ut neque aut perspiciatis repellat fugiat temporibus fugit accusantium! At, sunt. Est asperiores totam voluptate nulla? Ea perferendis laboriosam, quibusdam ipsam quasi, praesentium, velit nihil tempore nesciunt autem deserunt veritatis excepturi aspernatur quisquam expedita necessitatibus libero explicabo? Quasi, temporibus.Distinctio eligendi, quam minima sunt enim fugiat impedit quis alias doloribus quisquam veniam magnam debitis laudantium incidunt nulla ratione nesciunt provident accusantium molestiae voluptatibus, modi voluptates cumque consectetur. Suscipit, veritatis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, ad? Obcaecati aut excepturi rerum molestiae repellendus fugiat magni quam soluta! Id ut neque aut perspiciatis repellat fugiat temporibus fugit accusantium! At, sunt. Est asperiores totam volupto Suscipit, veritatis.</p>
+        <article>
+            <a href="#">lorem</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iure porro distinctio fugiat sequi modi veritatis amet assumenda optio, sunt expedita, soluta repudiandae quibusdam nisi aliquam quod corrupti minima quas?
+            Nemo modi officia nisi? Laudantium soluta asperiores sequi dolores officiis amet hic quas, necessitatibus nihil sapiente expedita possimus. Modi, illo. Odit at necessitatibus eveniet inventore rem dolor vero corrupti <a href="#">reprehenderit</a>.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iure porro distinctio fugiat sequi modi veritatis amet assumenda optio, sunt expedita, soluta repudiandae quibusdam nisi aliquam quod corrupti minima quas?
+            Nemo modi officia nisi? Laudantium soluta asperiores sequi dolores officiis amet hic quas, necessitatibus nihil sapiente expedita possimus. Modi, illo. Odit at necessitatibus eveniet inventore rem dolor vero corrupti <strong><a href="#">reprehenderit</a></strong>.</p>
+
+        </article>
+
+    </main>
+
+
+
+
+</body>
+</html>
