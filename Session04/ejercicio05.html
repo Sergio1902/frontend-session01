@@ -15,9 +15,6 @@
             list-style-type: none;
             
         }
-        li{
-            margin-right: 20px;
-        }
         a{
             text-decoration: none;
             color: brown;
@@ -43,7 +40,11 @@
             /*
             ul li:nth-child(odd){
                 background-color: darkkhaki;
-            }
+            } */
+
+            li:not(:last-child){
+            margin-right: 10px;
+        }
 
     </style>
 
