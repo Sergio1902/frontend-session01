@@ -1,57 +1,166 @@
-/* font-family: 'Zilla Slab', serif; */
-/* font-family: 'Raleway', sans-serif; */
+/* lo que siempre se va a usar */
 
 /****************
 Font
 ****************/
-/* Google Font */
-
+/* Google Fonts */
 /****************
-Typography - mas usada en la web 
+Typography
 ****************/
-html{
+html {
     font-size: 18px;
 }
-body{
-    font-family: 'Raleway', sans-serif; 
+body {
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 18px; /* convertir a em */
     line-height: 23px;
 }
-h1{
+h1 {
     font-size: 70px;
     line-height: 84px;
- 
 }
-h2{
+h2 {
     font-size: 50px;
     line-height: 60px;
- 
 }
-h3{
+h3 {
     font-size: 44px;
     line-height: 51px;
- 
 }
-h6{
+h6 {
     font-size: 18px;
     line-height: 21px;
 }
-h1,h2,h3,h6{
-    font-family: 'Zilla Slab', serif; 
+h1,
+h2,
+h3,
+h6 {
+    font-family: 'Zilla Slab', serif;
     font-weight: 700;
 }
 h1:first-child,
 h2:first-child,
 h3:first-child,
-h6:first-child{
+h6:first-child {
     padding: 0;
     margin: 0;
 }
-p{
+p {
     line-height: 23px;
     margin-bottom: 19px;
 }
-a{
+a {
+    text-decoration: none;
     font-weight: 700;
 }
+
+/****************
+Generals
+****************/
+:root {         /* creación de variables */
+    --primary-color: #ff0402;
+    --secondary-color: #707070;
+    --terteary-color: #a0a3a8;
+
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+
+    --input-border: 1px solid #ff0402;
+
+    --card-background-color: #f5fafd;
+
+    --font-1: 'Zilla Slab', serif;
+    --font-2: 'Raleway', sans-serif;
+}
+
+* { /* pendiente a buscar */
+    box-sizing: border-box;
+  }
+figure {
+    margin: 0;
+}
+img {
+    max-width: 100%;  /* imagenes responsive */
+    height: auto;
+}
+/*****************
+Contend
+******************/
+.main-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* hero-banner */
+.hero-banner {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.hero-banner .content {
+    width: 847px;
+    text-align: center;
+}
+.hero-banner .content p {
+    color: var(--secondary-color);
+    margin-top: 13px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-banner .content span {
+    color: var(--primary-color);
+}
+
+/* boton */
+.hero-banner .content div a:not(:last-child) {
+    margin-right: 20px;
+}
+.btn {
+    color: var(--primary-color);
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    padding: 12px 29px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+.btn.btn-dark {
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+.btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 2px solid var(--color-black);
+}
+/* gallery */
+.gallery {
+    padding-bottom: 65px;
+
+    display: flex;
+    align-items: flex-end;
+}
+/* my services */
+.title {
+    text-align: center;
+}
+.title span {
+    color: var(--primary-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--font-2);
+}
+.title h2 {
+    margin-top: 0;
+}
+
+.grid {
+    display: flex;
+}
+
+
+

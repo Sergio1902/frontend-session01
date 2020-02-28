@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>| Devmaster | </title>
+    <style>
+        section {
+            width: 800px;
+            height: 400px;
+            background-color: skyblue;
+            
+            display: flex;
+            /* estas propiedades afectan directamente a los hijos */
+            /* flex-direction: row; /* row 👶🏼 | row-reverse | column | column-rever */
+            /* justify-content: normal; /* normal 👶🏼 | flex-start | flex-end | center | space-between | space-around */
+        }
+        article {
+            width: 100px;
+            height: 100px;
+        }
+        
+        section article:nth-child(1) {
+            background-color: springgreen;
+        }
+        section article:nth-child(2) {
+            background-color: salmon;
+        }
+        section article:nth-child(3) {
+            background-color: magenta;
+        }
+        section article:nth-child(4) {
+            background-color: darkolivegreen;
+        } 
+    </style>
+</head>
+<body>
+    <section> <!-- padre -->
+        <article>1</article> <!-- hijo -->
+        <article>2</article> <!-- hijo -->
+        <article>3</article> <!-- hijo -->
+        <article>4</article> <!-- hijo -->
+    </section>
+</body>
+</html>
