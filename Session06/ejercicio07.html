@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* UNIDADES RELATIAS "PARA TEXTO"- PORCENTAJE DEPENDE DEL PADRE DIRECTO */
+        html{
+            font-size: 16px;
+        }
+        p{
+            font-size: 50%;  /* 8px */
+        }
+        strong{
+            font-size: 200%; /* 16px */
+        }
+        section{
+            width: 100%;
+            height: 400px;
+            background-color: springgreen;
+            display: flex;
+        }
+        article{
+            width: 50%;
+            height: 400px;
+        }
+        section :first-child{
+            background-color: blue;                
+        }
+        section :last-child{
+            background-color: coral;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Grupo08 | <span>Frontend</span></h1>
+    <p>Centro de entrenamiento en Tecnología 
+        <strong>Devmaster</strong>
+    </p>
+    <section>
+        <article></article>
+        <article></article>
+    </section>
+</body>
+</html>

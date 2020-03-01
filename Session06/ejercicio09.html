@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* seudo elementos - */
+        .pseudo-1::before{
+            content: "Hola, ";
+        }
+        .pseudo-1::after{
+            content: ". Binevenido ";
+        }
+        .pseudo-2::before{
+            content:" ";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: hsl(9, 100%, 64%);
+            border-radius: 50%;
+        }
+        .pseudo-2::after{
+            content:" ";
+            display: inline-block;
+            /* width: 2px;
+            height: 10px;
+            background-color: hsl(145, 93%, 41%); */
+            
+            /* para u triangulo */
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 7px 0 7px 7px;
+            border-color: transparent transparent transparent #05e751;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        /* SEUDO CLASES PARA ENLACES */
+
+        /* cuando la pagina no ha sido visitada*/
+        a:link{
+            color: blue;
+        }
+        /* cuando la pagina ya se visito*/
+        a:visited{
+            color: springgreen;
+        }
+        /* mouse encima del elemento*/
+        a:hover{
+            color: yellow;
+        }
+        /* mantiene el boton del mouse click*/
+        a:active{
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Seudo elementos -->
+    <p class="pseudo-1">Jean Pierre Paucar Rojas</p>
+    <p class="pseudo-2"> Item 1 </p>
+    <!-- Seudo clases -->
+    <a href="https://www.youtube.com/?hl=es-419&gl=PE">Youtube</a>
+    <a href="http://www.devmaster.pe/">Devamster</a>
+</body>
+</html>

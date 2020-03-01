@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesone -->
+    <script src="https://kit.fontawesome.com/0f83311815.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/linearicons.css">
+
+    <style>
+        .lista{
+            font-family: 'Linearicons';
+        }
+        .lista :nth-child(1)::before{
+            content: "\e6eb";
+        }
+        .lista :nth-child(2)::before{
+            content: "\e644";
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><i class="fab fa-facebook-f"></i>Item 1</li>
+        <li><i class="fab fa-twitter"></i>Item 2</li>
+        <li><i class="fab fa-instagram"></i>Item 3</li>
+        <li><i class="fab fa-google-plus-g"></i>Item 4</li>
+    </ul>
+    <ul class="lista">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ul>
+        <li>Item 3</li>
+        <li><span class="icon-moon"></span> Item 4</li>
+    </ul>
+</body>
+</html>

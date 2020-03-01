@@ -151,10 +151,70 @@ Contend
 .title h2 {
     margin-top: 0;
 }
-
 .grid {
     display: flex;
 }
+.grid .card:not(:last-child)
+{
+    margin-right: 20px;
+}
+.card figure img{
+    display: inline-block;
+}
+.card span{
+    font-family: var(--font-1);
+    color: var(--color-black);
+    font-weight: 400;
+    margin-left: 27px;
+}
+.card div{
+    height: 54px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2;
+}
+.card:hover div{
+    background-color: var(--primary-color);
+}
+.card:hover div{
+    background-color: var(--primary-color);
+}
 
+/*****************
+description
+******************/
 
+/*****************
+footer
+******************/
+.main-footer{
+    background-color: var(--color-black);
+    padding-top: 53px;
+    padding-bottom: 53px;
+    text-align: center;
+}
+.footer p{
+    color: var(--terteary-color);
+    font-size: 16px;
+    max-width: 318px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer p a{
+    color: var(--terteary-color);
+    text-decoration: underline;
+}
+.network-social ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.network-social li:not(:last-child){
+    margin-right: 17px;
+
+}
+.network-social a{
+  color: var(--color-white);
+  font-size: 26px;
+}
 
