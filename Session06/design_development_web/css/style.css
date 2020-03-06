@@ -139,6 +139,9 @@ Contend
     align-items: flex-end;
 }
 /* my services */
+.my-service{
+    padding-top: 96px;
+}
 .title {
     text-align: center;
 }
@@ -158,31 +161,99 @@ Contend
 {
     margin-right: 20px;
 }
-.card figure img{
-    display: inline-block;
+.grid .card{
+    margin-bottom: 41px;
 }
-.card span{
-    font-family: var(--font-1);
-    color: var(--color-black);
-    font-weight: 400;
-    margin-left: 27px;
+.card figure img{
+    display: block;
 }
 .card div{
     height: 54px;
+     /* border radius isquierda */
+     border-bottom-left-radius: 7px;
+     /* border radius derecha */
+     border-bottom-right-radius: 7px;
+
     display: flex;
     align-items: center;
     transition: all 0.2;
 }
+.card span{
+    color: var(--color-black);
+    font-weight: 400;
+    font-family: var(--font-1);
+    margin-left: 27px;
+}
+
 .card:hover div{
     background-color: var(--primary-color);
 }
-.card:hover div{
-    background-color: var(--primary-color);
+.card:hover span{
+    color:  var(--color-white);
 }
 
 /*****************
 description
 ******************/
+.description {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.card-2 {
+    background-color: var(--quinary-color);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.16);
+    padding: 31px 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.card-2 div {
+    padding-left: 80px;
+    position: relative;
+}
+.card-2 h3 {
+    line-height: 41px;
+}
+.grid .card-2:nth-child(1) div:before {
+    content: "\e6d4";
+    font-family: 'Linearicons';
+    font-size: 62px;
+    line-height: 1;
+    color: var(--quaternary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.grid .card-2:nth-child(2) div:before {
+    content: "\e6dd";
+    font-family: 'Linearicons';
+    font-size: 62px;
+    line-height: 1;
+    color: var(--quaternary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.grid .card-2:nth-child(3) div:before {
+    content: "\e90b";
+    font-family: 'Linearicons';
+    font-size: 62px;
+    line-height: 1;
+    color: var(--quaternary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.grid .grid-item {
+    width: 380px;
+}
+.grid .grid-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+
 
 /*****************
 footer

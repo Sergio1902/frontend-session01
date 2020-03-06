@@ -6,13 +6,19 @@
     <title>Document</title>
     <style>
         /* seudo elementos - */
-        .pseudo-1::before{
+        /* BEFORE --> ANTES */
+        /* AFTER --> DESPUES */
+        
+        /* PREGUNTA ? */
+        /* A QUIENES SE LE DEBE INDICAR INLINE-BLOCK */
+
+        .pseudo-1:before{
             content: "Hola, ";
         }
-        .pseudo-1::after{
+        .pseudo-1:after{
             content: ". Binevenido ";
         }
-        .pseudo-2::before{
+        .pseudo-2:before{
             content:" ";
             display: inline-block;
             width: 10px;
@@ -20,7 +26,7 @@
             background-color: hsl(9, 100%, 64%);
             border-radius: 50%;
         }
-        .pseudo-2::after{
+        .pseudo-2:after{
             content:" ";
             display: inline-block;
             /* width: 2px;

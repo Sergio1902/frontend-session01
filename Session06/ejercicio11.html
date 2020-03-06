@@ -6,10 +6,11 @@
     <title>Document</title>
     <!-- Font Awesone -->
     <script src="https://kit.fontawesome.com/0f83311815.js" crossorigin="anonymous"></script>
+    <!-- Linearicons -->
     <link rel="stylesheet" href="css/linearicons.css">
 
     <style>
-        .lista{
+        .lista li{
             font-family: 'Linearicons';
         }
         .lista :nth-child(1)::before{
@@ -22,18 +23,22 @@
 </head>
 <body>
     <ul>
+        <!-- Font Awesome + Linearicons -->
+        <!-- Utilizando el atributo Class (Font Awesome)-->
         <li><i class="fab fa-facebook-f"></i>Item 1</li>
         <li><i class="fab fa-twitter"></i>Item 2</li>
         <li><i class="fab fa-instagram"></i>Item 3</li>
         <li><i class="fab fa-google-plus-g"></i>Item 4</li>
     </ul>
+    <!-- Utilizando pseudo elemento (Linearicons)-->
     <ul class="lista">
         <li>Item 1</li>
         <li>Item 2</li>
     </ul>
-    <ul>
-        <li>Item 3</li>
-        <li><span class="icon-moon"></span> Item 4</li>
+     <!-- Utilizando el atributo Class (Linearicons)-->
+     <ul>
+        <li><span class="icon-code"></span>Item 3</li>
+        <li><span class="icon-thumbs-up3"></span></span> Item 4</li>
     </ul>
 </body>
 </html>
