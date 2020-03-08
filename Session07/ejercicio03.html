@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+       .box{
+           height: 400px;
+           background-color: tomato;
+           /* primer padre */
+           position: relative;
+       }
+       .box h3 {       
+           background-color: green;
+           border: 2px dashed blue;
+           /* para que el hijo no salga del contenedor padre*/
+           /* position absolute */
+           
+           /* CENTRADO PERFECTO */
+           /* position: absolute; */
+           /* top: 50%; */
+           /* left: 50%; */
+           /* eje X y eje Y*/
+           /* transform: translate(-50%, -50%); */
+
+            /* CENTRADO ISQUIERDO */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+
+       }
+    </style>
+</head>
+<body>
+    <!-- position -- static-relative-absolute-fixed -->
+    <!-- top bootom rigth left solo funciona cuando la posicion no es estatic -->
+    <div class="box">
+        <h3>HOLA</h3>
+    </div>
+</body>
+</html>

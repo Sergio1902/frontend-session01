@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        figure{
+            margin: 0;
+            border: 2px solid green;
+            /* para que el figure ocupe solo el tamaño de la imagen */
+            display: inline-block;
+            /* posicion de padre */
+            position: relative;
+            /* cambiar el mouse */
+            cursor: pointer;
+
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        img{
+            display: block;
+            transition: all 0.2s;
+        }
+        figcaption{
+            position: absolute;
+            background-color: rgba(0, 0, 0,0.6);
+            color: honeydew;
+            font-size: 24px;
+            width: 100%;
+            height: 100%;
+            
+            top: 0;
+            left: 0;
+            /* ocultar la letra */
+            opacity: 0; 
+            /* se coloca al que sufra un cambio en el hover */
+            transition: all 0.2s;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        figure:hover figcaption{
+            opacity: 1;
+            transition: all 0.2s;
+            
+        }
+        figure:hover img{
+            
+            opacity: 1;
+            transition: all 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="img/download.jpg" alt="a">   
+        <figcaption>
+            Sergio Carbajal
+        </figcaption> 
+    </figure>
+    
+</body>
+</html>

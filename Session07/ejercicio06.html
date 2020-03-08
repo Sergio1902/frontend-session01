@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0f83311815.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        figure{
+            margin: 0;
+            border: 2px solid green;
+            /* para que el figure ocupe solo el tamaño de la imagen */
+            display: inline-block;
+            /* posicion de padre */
+            position: relative;
+            /* cambiar el mouse */
+            cursor: pointer;
+
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        img{
+            display: block;
+            transition: all 0.2s;
+        }
+        figcaption{
+            position: absolute;
+            background-color: rgba(0, 0, 0,0.6);
+            color: honeydew;
+            font-size: 24px;
+            width: 100%;
+            height: 100%;
+            
+            top: 0;
+            left: 0;
+            /* ocultar la letra */
+            opacity: 0; 
+            /* se coloca al que sufra un cambio en el hover */
+            transition: all 0.2s;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        figure:hover figcaption{
+            opacity: 1;
+            transition: all 0.2s;
+            
+        }
+        figure:hover img{
+            
+            opacity: 1;
+            transition: all 0.2s;
+        }
+        .social-network{
+            /* para que ocupe solo lo que se necesite los iconos*/
+            display: inline-block;
+        }
+        .social-network ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border: 2px solid black;
+        }
+        .social-network li{
+            width: 34px;
+            height: 34px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-network li:not(:last-child){
+            border-bottom: 2px solid black;
+        }
+        .social-network a{
+            color: white;
+        }
+        .social-network {
+            position: fixed;
+            top: 130px;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Oradores</h1>
+        <figure>
+            <img src="img/download.jpg" alt="a">   
+            <figcaption>
+                Sergio Carbajal
+            </figcaption> 
+        </figure>
+        <p>Próximamente mas oradores...</p>
+    </section>
+    <section>
+        <h2>Description</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate, est eos aliquid sapiente possimus eius beatae a, aliquam quod voluptatibus. Reprehenderit laborum s? dolor sit amet consectetur adipisicing elit.  adipisci quod beatae, blanditiis sequi perspiciatis doloreIure cupiditate, est eos aliquid sapiente possimus eius beatae a, aliquam a, aliquam quod voluptatibus. Reprehenderit laborum s? dolor sit amet consectetur adipisicing elit.  adipisci quod beatae, blanditiis sequi perspiciatis doloreIure cupiditate, est eos aliquid sapiente possimus eius beatae a, aliquam quod voluptatibus. Reprehenderit laborum adipisci quod beatae, blanditiis sequi perspiciatis dolores? quod voluptatibus. Reprehenderit laborum adipisci quod beatae, blanditiis sequi perspiciatis dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure cupiditate, est eos aliquid sapiente possimus eius beatae a, aliquam quod voluptatibus. Reprehenderit laborum s? dolor sit amet consectetur adipisicing elit.  adipisci quod beatae, blanditiis sequi perspiciatis doloreIure cupiditate, est eos aliquid sapiente possimus eius beatae a, aliquam quod voluptatibus. Reprehenderit laborum adipisci quod beatae, blanditiis sequi perspiciatis dolores?</p>
+    </section>
+    <nav class="social-network">
+        <ul>
+            <li><a href="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </nav>
+</body>
+</html>

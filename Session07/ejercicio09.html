@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .degradado{
+            height: 500px;
+
+            /******* color degrado *******/
+
+            /* background-image: linear-gradient(red, orange, black); */
+           
+            /* la direccion va como primer valor */
+            /* background-image: linear-gradient( 360deg, red, orange, black); */
+            
+            /* extension CSS GRADIENT - utilizar para escoger los colores */
+            background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 16%, rgba(0,212,255,0) 100%),
+                              url(img/woman.jpg);
+            /* background-size: 100% 500px;  /* tamaño de la imagen */
+            /* para que respete el tamaño de la imagen inicial - responsive */
+            background-size: cover;
+            background-position: 50% 50%; /* center - center*/
+        }
+        /****** IMAGEN ESTATICA - SCROOL ********/
+        .fixed{
+            height: 300px;
+            background-image: url(img/woman2.jpg);
+            background-size: cover;
+            background-attachment: fixed; /* scroll */
+        }
+        .radial{
+            height: 400px;
+            /* background-image: radial-gradient(circle, red, orange); */
+            background-image: radial-gradient(ellipse, orange, red); 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="degradado">
+
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam, neque nam eligendi soluta beatae quos provident quibusdam consequuntur exercitationem, atque voluptates cumque ad voluptatem facere doloremque veniam dolores qui. Nisi optio omnis minima impedit repudiandae ex saepe voluptatibus molestiae excepturi, quod, consequatur molestias beatae quas labore rerum recusandae, reiciendis pariatur a magni ratione quam illo voluptas odit. Dicta, in?
+    Voluptas placeat laudantium tempora iusto eligendi ad odit numquam, molestias omnis ipsam aliquid perferendis minus quaerat ab ipsum! Alias laudantium necessitatibus amet cum, ipsam incidunt dolores sint mollitia. Recusandae, reiciendis!
+    Nihil, laboriosam placeat consequuntur sed incidunt natus, quae officia adipisci molestias perferendis quaerat maxime, consequatur alias quibusdam eaque! Alias eveniet vel ducimus tenetur maiores dignissimos praesentium omnis fugit, velit iste? Eaque ab animi fugit delectus. Sequi eum eaque debitis laudantium quia? Tempora iure, soluta ad modi debitis distinctio maxime animi quas dicta nam ab repellat accusamus quam est expedita voluptate?
+    Impedit provident debitis reprehenderit laboriosam! Illum error sit molestias aliquid quo architecto autem. Molestiae recusandae quia unde totam, nostrum numquam corrupti beatae illum sit laudantium pariatur dolorum, ullam omnis rem.
+    Nisi optio omnis minima impedit repudiandae ex saepe voluptatibus molestiae excepturi, quod, consequatur molestias beatae quas labore rerum recusandae, reiciendis pariatur a magni ratione quam illo voluptas odit. Dicta, in?
+    Voluptas placeat laudantium tempora iusto eligendi ad odit numquam, molestias omnis ipsam aliquid perferendis minus quaerat ab ipsum! Alias laudantium necessitatibus amet cum, ipsam incidunt dolores sint mollitia. Recusandae, reiciendis! Nihil, laboriosam placeat consequuntur sed incidunt natus, quae officia adipisci molestias perferendis quaerat maxime, consequatur alias quibusdam eaque! Alias eveniet vel ducimus tenetur maiores dignissimos praesentium omnis fugit, velit iste?</p>
+    <div class="fixed">
+
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aperiam, neque nam eligendi soluta beatae quos provident quibusdam consequuntur exercitationem, atque voluptates cumque ad voluptatem facere doloremque veniam dolores qui. Nisi optio omnis minima impedit repudiandae ex saepe voluptatibus molestiae excepturi, quod, consequatur molestias beatae quas labore rerum recusandae, reiciendis pariatur a magni ratione quam illo voluptas odit. Dicta, in?
+    Voluptas placeat laudantium tempora iusto eligendi ad odit numquam, molestias omnis ipsam aliquid perferendis minus quaerat ab ipsum! Alias laudantium necessitatibus amet cum, ipsam incidunt dolores sint mollitia. Recusandae, reiciendis!
+    Nihil, laboriosam placeat consequuntur sed incidunt natus, quae officia adipisci molestias perferendis quaerat maxime, consequatur alias quibusdam eaque! Alias eveniet vel ducimus tenetur maiores dignissimos praesentium omnis fugit, velit iste? Eaque ab animi fugit delectus. Sequi eum eaque debitis laudantium quia? Tempora iure, soluta ad modi debitis distinctio maxime animi quas dicta nam ab repellat accusamus quam est expedita voluptate?
+    Impedit provident debitis reprehenderit laboriosam! Illum error sit molestias aliquid quo architecto autem. Molestiae recusandae quia unde totam, nostrum numquam corrupti beatae illum sit laudantium pariatur dolorum, ullam omnis rem.
+    Nisi optio omnis minima impedit repudiandae ex saepe voluptatibus molestiae excepturi, quod, consequatur molestias beatae quas labore rerum recusandae, reiciendis pariatur a magni ratione quam illo voluptas odit. Dicta, in?
+    Voluptas placeat laudantium tempora iusto eligendi ad odit numquam, molestias omnis ipsam aliquid perferendis minus quaerat ab ipsum! Alias laudantium necessitatibus amet cum, ipsam incidunt dolores sint mollitia. Recusandae, reiciendis! Nihil, laboriosam placeat consequuntur sed incidunt natus, quae officia adipisci molestias perferendis quaerat maxime, consequatur alias quibusdam eaque! Alias eveniet vel ducimus tenetur maiores dignissimos praesentium omnis fugit, velit iste?</p>
+    <div class="radial">
+
+    </div>
+</body>
+</html>

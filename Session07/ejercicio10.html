@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- es necesario para tener un pagina web responsiva -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        header, footer{
+            height: 300px;
+            background-color: grey;
+        }
+        main{
+            display: flex;
+        }
+        section, aside{
+            width: 50%;
+            height: 600px;
+        }
+        section{
+            background-color: springgreen;
+        }
+        aside{
+            background-color: deeppink;
+        }
+
+        /* cuando llegues a un ancho maximo 1024 - 992 - 768 - 640 */
+        @media screen and (max-width: 992px) {
+            header, footer{
+                background-color: firebrick;
+                height: 120px;
+            }
+        @media screen and (max-width: 768px){
+            main{
+                flex-direction: column;
+                }
+            section, aside{
+                width: 100%;
+                }           
+        }
+        @media screen and (max-width: 640px){
+           header{
+               background-color: gold;
+           }
+        }
+        @media screen and (max-width: 480px){
+           section{
+               order: 2;
+           }
+           aside{
+               order: 1;
+           }
+        }
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section></section>
+        <aside></aside>
+    </main>
+    <footer></footer>
+</body>
+</html>

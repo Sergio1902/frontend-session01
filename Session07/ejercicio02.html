@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+       .box{
+           width: 600px;
+           height: 400px;
+           background-color: tomato;
+           /* primer padre */
+           position: relative;
+       }
+       .box div {
+           width: 100px;
+           height: 100px;
+
+       }
+       .box :nth-child(1){
+           position: absolute;
+           background-color: green;
+           border: 2px dashed blue;
+           top: 0;
+           left: 0;
+           
+           /* Z INDEX --> solo funciona en position diferente de static*/
+            z-index: 2;          
+       }
+       .box :nth-child(2){
+           background-color: orange;
+           position: absolute;
+           top: 50px;
+           left: 50px;
+           z-index: 3;
+       }
+       .box :nth-child(3){
+           background-color: red;
+           position: absolute;
+           top: 50px;
+           left: 0;
+           z-index: 1;
+       }
+    </style>
+</head>
+<body>
+    <!-- position -- static-relative-absolute-fixed -->
+    <!-- top bootom rigth left solo funciona cuando la posicion no es estatic -->
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
