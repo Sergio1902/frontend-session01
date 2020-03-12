@@ -8,19 +8,19 @@
         figure{
             margin: 0;
             border: 2px solid green;
-            /* para que el figure ocupe solo el tamaño de la imagen */
+            /* para que el figure o contenedor ocupe solo el tamaño del elemento o hijo */
             display: inline-block;
             /* posicion de padre */
             position: relative;
             /* cambiar el mouse */
-            cursor: pointer;
+            /* cursor: pointer; */
 
-            border-radius: 10px;
-            overflow: hidden;
+            /* border-radius: 10px; */
+            /* overflow: hidden; */
         }
         img{
             display: block;
-            transition: all 0.2s;
+            /* transition: all 0.2s; */
         }
         figcaption{
             position: absolute;
@@ -44,19 +44,20 @@
         
         figure:hover figcaption{
             opacity: 1;
-            transition: all 0.2s;
-            
-        }
+            transition: all 0.2s;  
+        } 
         figure:hover img{
-            
             opacity: 1;
             transition: all 0.2s;
         }
     </style>
 </head>
 <body>
+    <!-- elemento de bloque  -->
     <figure>
         <img src="img/download.jpg" alt="a">   
+        <!-- utilizado para colocar letras sobre una imagen - CARDS -->
+        <!-- elemento de bloque  -->
         <figcaption>
             Sergio Carbajal
         </figcaption> 

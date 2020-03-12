@@ -12,7 +12,7 @@
            width: 600px;
            height: 400px;
            background-color: tomato;
-           /* primer padre */
+           /* primer padre - principal */
            position: relative;
        }
        .box div {
@@ -21,28 +21,37 @@
 
        }
        .box :nth-child(1){
-           position: absolute;
-           background-color: green;
-           border: 2px dashed blue;
-           top: 0;
-           left: 0;
+            /* elemento hijo no sale fuera del contenedor padre */
+            /* el elemento permanece en su ubicación pero delante de los demas hijos */
+            /* si hubiera un solo hijo por defecto se va a la posicion 0 - 0 */
+            position: absolute;
+            background-color: green;
+            border: 2px dashed blue;
+            /* con position absolute se activa el top rigt left bootom */
+            top: 0;
+            left: 0;
            
-           /* Z INDEX --> solo funciona en position diferente de static*/
-            z-index: 2;          
+            /* Z INDEX --> solo funciona en position diferente de static */
+            /* Z INDEX --> para asignar un orden a los elementos  1 - al fondo 
+                                                                  2 - al medio 
+                                                                  3 - arriba  */
+            z-index: 1;
        }
        .box :nth-child(2){
-           background-color: orange;
-           position: absolute;
-           top: 50px;
-           left: 50px;
-           z-index: 3;
+            position: absolute;
+            background-color: orange;
+           
+            top: 50px;
+            left: 50px;
+            z-index: 3;
        }
        .box :nth-child(3){
-           background-color: red;
-           position: absolute;
-           top: 50px;
-           left: 0;
-           z-index: 1;
+            position: absolute;
+            background-color: red;
+           
+            top: 100px;
+            left: 0;
+            z-index: 2;
        }
     </style>
 </head>
@@ -50,9 +59,9 @@
     <!-- position -- static-relative-absolute-fixed -->
     <!-- top bootom rigth left solo funciona cuando la posicion no es estatic -->
     <div class="box">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        <div>PRIMERO</div>
+        <div>SEGUNDO</div>
+        <div>TERCERO</div>
     </div>
 </body>
 </html>

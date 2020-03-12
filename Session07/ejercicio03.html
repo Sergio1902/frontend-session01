@@ -17,21 +17,31 @@
        .box h3 {       
            background-color: green;
            border: 2px dashed blue;
+
            /* para que el hijo no salga del contenedor padre*/
            /* position absolute */
            
-           /* CENTRADO PERFECTO */
+           /******************
+           CENTRADO PERFECTO - letras para cards 
+           ******************/
+
            /* position: absolute; */
+           /* h3 tiene por defecto margen establecido */
+           /* margin: 0;  */
            /* top: 50%; */
            /* left: 50%; */
-           /* eje X y eje Y*/
+           /* eje X y eje Y*/  
+           /* el % esta en relación al tamaño del elemento */
            /* transform: translate(-50%, -50%); */
 
-            /* CENTRADO ISQUIERDO */
-            position: absolute;
+            /******************
+            CENTRADO IZQUIERDO - letras para cards 
+            ******************/
+            position: absolute; 
+            margin: 0; 
             top: 50%;
             transform: translateY(-50%);
-            margin: 0;
+            
 
        }
     </style>
