@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(45deg, #4f88bc), #29abe2;
+
+            /* Propiedades minimas */
+            animation-name: animateBox;
+            animation-duration: 3s;
+        }
+        
+        @keyframes animateBox{
+            /* DESDE */
+            0%{
+                height: 200px;
+            }
+            /* HASTA */
+            100%{
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

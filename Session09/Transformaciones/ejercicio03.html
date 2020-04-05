@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: springgreen;
+           
+            margin-left: auto;
+            margin-right: auto;          
+            
+
+            /* transform: rotate(10deg); sentido horario */
+            /* transform: rotate(-10deg) */ /* sentido antihorario*/
+
+        }
+        .not-rotate{
+            margin-top: 40px;
+            border: 2px dashed deeppink;
+        }
+        .rotate{
+            border: 2px dashed black;
+            
+            transform: rotate(30deg);
+            /* punto de origen */
+            transform-origin: top right;
+        }
+    </style>
+</head>
+<body>
+    <!-- Transformaciones -->
+    <div class="not-rotate">  <!-- rotacion -->
+        <div class="rotate">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+
+            /* 1er cambio en el color de fondo */
+            /* 2do cambio ancho del elemento*/
+            /* 3er cambio de alto del elemento*/
+            /* */
+            transition: background-color 0.5s linear 0s,
+                        width 0.5s linear 0.6s,
+                        heigth 1s linear 2s;
+        }
+        div:hover{
+            background-color: springgreen;
+            width: 300px;
+            height: 500px;
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+
+</body>
+</html>

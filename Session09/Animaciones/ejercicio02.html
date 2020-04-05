@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(45deg, #4f88bc, #29abe2);
+            border: 4px dashed springgreen;
+            border-radius: 50%;
+
+            /* Propiedades minimas */
+            animation-name: traslateBox;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            /* retardo de la animacion*/
+            animation-delay: 1s;
+            /* numero de repeticiones */
+            animation-iteration-count: infinite;
+            /* dirección de la animacion */
+            animation-direction: normal;
+            /* si se queda tal y como inicio o en el lugar despues de la transicion */
+            animation-fill-mode: forwards;
+     
+        }
+
+
+        
+        @keyframes traslateBox{
+            /* DESDE */
+            0%{
+                transform: translateX(0);
+                border: 4px dashed springgreen;
+            }
+            /* HASTA */
+            100%{
+                transform: translateX(500px);
+                border: 1px dashed red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
