@@ -265,14 +265,26 @@ description
 
 
 
+
+
+
 /******************
 form
 ******************/
-.form-contact div{
-    width: 100%;
+
+.form{
+    margin-top: 114px;
+    margin-bottom: 93px;
+}
+.form-contact{
+    display: flex;
+    flex-wrap: wrap;
 }
 .form-contact div:not(:last-child){
     margin-bottom: 32px;
+}
+.form-contact div{
+    width: 100%;
 }
 .form-contact div:nth-child(1), 
 .form-contact div:nth-child(2){
@@ -284,21 +296,25 @@ form
 .form-contact div:nth-child(2){
     padding-left: 10px;
 }
-.form-contact{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .form-contact div input,
 .form-contact div textarea{
     width: 100%;
     border-radius: 5px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 20px;
     border:  1px solid #ff0402;
+    outline: none;
+}
+.form-contact div input{
+    height: 56px;
+    padding: 0 20px;
+}
+.form-contact input:focus,
+.form-contact textarea:focus{
+    border: 2px solid green;
 }
 .form-contact div textarea{
     height: 175px;
+    padding: 20px;
     /* bloquear cambiar tamaño del text area */
     resize: none;
 }
@@ -308,11 +324,9 @@ form
 .form-contact-btn .btn{
     background-color: #ff0402;
     color: white;
-    text-align: center;
+    font-weight: 700;
 }
-.form-contact div input{
-    height: 56px;
-}
+
 
 
 
