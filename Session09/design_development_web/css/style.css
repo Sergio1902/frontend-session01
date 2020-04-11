@@ -289,14 +289,13 @@ recomendation
     margin: 0;
     font-size: 18px;
     line-height: 23px;
+    margin-bottom: 20px;
 }
 .recomendation-member{
     display: flex;
     margin-top: 10px;
 }
 .recomendation-member img{
-    width: 92px;
-    height: 92px;
     border-radius: 50%;
 }
 .recomendation-member h6{
@@ -312,15 +311,6 @@ recomendation
 .recomendation-member-text{
     padding: 20px 30px;
 }
-
-
-
-
-
-
-
-
-
 
 
 /******************
@@ -386,14 +376,6 @@ form
 
 
 
-
-
-
-
-
-
-
-
 /*****************
 footer
 ******************/
@@ -434,6 +416,10 @@ Media Queries
 /* Tablets */
 @media screen and (max-width: 1024px) {
     
+    .recomendation-member-text{
+        padding: 10px 20px;
+    }
+
 }
 /* Tablets */
 @media screen and (max-width: 992px) {
@@ -446,8 +432,27 @@ Media Queries
         font-size: 32px;
         line-height: 42px;
     }
+
+    /* Recomendation */
+
+    .recomendation-cards p{
+        margin: 0;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .recomendation-member-text{
+        padding: 20px 20px;
+    }
+    .recomendation-member span{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .recomendation-member h6{
+        font-size: 14px;
+    }
 }
     /* Mobile */
+
 @media screen and (max-width: 768px){
     /* HERO - BANNER */
     .hero-banner .content div{
@@ -483,6 +488,33 @@ Media Queries
     .description .grid .grid-item:not(:last-child) {
         margin-bottom: 21px;
     }
+
+    /* RECOMENDATION */
+
+    .recomendation-cards-global{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .recomendation-cards-global .recomendation-cards:not(:last-child){
+        margin-right: 0px;
+    }
+    .recomendation-cards{
+        margin-bottom: 20px;
+    }
+    .recomendation-member span{
+        margin-top: 7px;
+        font-size: 16px;
+        line-height: 21px;
+    } 
+    .recomendation-member h6{
+        font-size: 18px;  
+    }
+    .recomendation-member-text{
+        padding: 20px 30px;
+    }
+
 }
 @media screen and (max-width: 640px) {
     /** Gallery **/
