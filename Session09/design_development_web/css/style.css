@@ -146,6 +146,7 @@ Contend
 }
 .title {
     text-align: center;
+    margin-top: 92px;
 }
 .title span {
     color: var(--primary-color);
@@ -262,6 +263,60 @@ description
 .grid .grid-item:not(:last-child) {
     margin-right: 1.6949152542%;
 }
+
+/*****************
+recomendation
+*****************/
+.recomendation-cards-global{
+    display: flex;
+}
+.recomendation-cards-global .recomendation-cards:not(:last-child){
+    margin-right: 20px;
+}
+.recomendation-cards{
+    max-width: 380px;
+    height: 260px;
+    background-color: #f5fafd;
+    color: #a0a3a8;
+    font-family: var(--font-2);
+    font-weight: 400;
+    padding: 31px;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+    background-color: #f5fafd;
+}
+.recomendation-cards p{
+    margin: 0;
+    font-size: 18px;
+    line-height: 23px;
+}
+.recomendation-member{
+    display: flex;
+    margin-top: 10px;
+}
+.recomendation-member img{
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+.recomendation-member h6{
+    margin: 0;
+    color: black;
+    font-weight: 700;
+}
+.recomendation-member span{
+    margin-top: 7px;
+    font-size: 16px;
+    line-height: 21px;
+}
+.recomendation-member-text{
+    padding: 20px 30px;
+}
+
+
+
+
+
 
 
 
