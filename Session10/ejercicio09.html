@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn-corto">Agregar texto corto</button>
+    <button id="btn-regular">Agregar texto regular</button>
+    <button id="btn-largo">Agregar texto largo</button>
+
+    <p>Mensaje corto</p>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn-corto").on("click",function(){
+                $("p").html("Mensaje corto");
+            });
+
+            $("#btn-regular").on("click",function(){
+                $("p").html("Mensaje ya no tan corto");
+            });
+
+            $("#btn-largo").on("click",function(){
+                $("p").html("Mensaje muy largo");
+            })
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- completar el dia a traves de Java Script -->
+    <h1>El dia de hoy es </h1>
+    <p>Hoy es: <span id="dia">...</span></p>
+
+    <h1>El mes actual es </h1>
+    <p>mes de : <span id="mes">...</span></p>
+
+    <script>
+
+        // var fecha = new Date();
+        // fecha=fecha.getDay();
+        
+        //document.getElementById("dia").innerHTML="Miercoles"
+
+        /* RELACIONAR HTML CON JAVA SCRIPT */
+        
+        /*
+        switch (fecha) {
+             case 1:
+                 document.getElementById("dia").innerHTML="Lunes"
+                 break;
+             case 2:
+                 document.getElementById("dia").innerHTML="Martes"
+                 break;
+             case 3:
+                 document.getElementById("dia").innerHTML="Miercoles"
+                 break;
+             case 4:
+                 document.getElementById("dia").innerHTML="Miercoles"
+                 break;
+             case 5:
+                 document.getElementById("dia").innerHTML="Miercoles"
+                 break;
+             case 6:
+                 document.getElementById("dia").innerHTML="Miercoles"
+                 break;
+             case 6:
+                 document.getElementById("dia").innerHTML="Miercoles"
+                 break;
+              default:
+                 break;
+        }
+        */
+        
+        //tarea - obtener los meses del año del objeto Date();
+
+        var mesActual= new Date();
+        mesActual= mesActual.getMonth();
+
+        switch (mesActual) {
+            case 1:
+                document.getElementById("mes").innerHTML="Enero"
+                break;
+            case 2:
+                document.getElementById("mes").innerHTML="Febrero"
+                break;
+            case 3:
+                document.getElementById("mes").innerHTML="Marzo"
+                break;
+            case 4:
+                document.getElementById("mes").innerHTML="Marzo"
+                break;
+        
+            default:
+                break;
+        }
+    </script>
+
+</body>
+</html>

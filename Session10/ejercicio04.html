@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /* OPERADORES ARITMÉTICOS */
+
+        var numero1 = 20;
+        var numero2 = 2;
+
+        console.log(numero1 + numero2);
+        console.log(numero1-numero2);
+        console.log(numero1*numero2);
+        console.log(numero1/numero2);
+        console.log(numero1%numero2);
+        console.log(++numero1);
+        console.log(--numero1);
+
+            /* concatenar valores numericos o cadenas */
+        var texto1 ="hola ";
+        var texto2 ="como estas?"
+        console.log(texto1 + texto2);
+
+        /* OPERADORES DE ASIGNACIÓN */
+
+        var numero = 10;
+
+            // numero = numero + 5;
+            // console.log(numero);
+
+        numero ++;
+        numero -=5;
+        numero /=2;
+
+        console.log(numero);
+
+        /* OPERADORES DE COMPARACIÓN */
+
+        var valor1= 40;
+        var valor2= 20;
+        //la respuesta es true o false
+        console.log(valor1 > valor2);
+        console.log(valor1 >= valor2);
+        //comparar el valor
+        console.log(valor1 == valor2);
+        //comparar valor y tipo de dato
+        console.log(valor1 === valor2);
+
+        console.log(valor1 != valor2);
+        console.log(valor1 !== valor2);
+
+        /* OPERADORES LÓGICOS */
+
+        //    && - (AND) - las 2 condiciones deben cumplirse 
+        //    || - (OR) - al menos una de ellas debe cumplirse
+        //    ! - (NOT) - si una condicion es verdadera o false , este operador invierte el valor 
+               
+        /* ESTRUCTURA CONDICIONAL */
+              
+            //metodo prompt - cuadro de dialogo solicitando valores
+        var usuario     = prompt("Ingrese usuario");
+        var contrasenia  = prompt("Ingrese contraseña");
+
+
+        if(usuario == "admin" && contrasenia == "12345")
+        {
+            //mensaje ventana emergente
+            alert("Bienvenido")
+        }
+        else{
+            alert("Contraseña incorrecta")
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

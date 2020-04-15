@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //funciones - declarar algoritmos para reutilizarlos
+
+        //funcion sin parametros
+        function prueba(){
+            console.log("se ejecuta la primera funcion en java script");
+        };
+        //ejecutar la funcion
+        prueba();
+        
+        //funcion con parametros
+        function suma(a, b){
+            console.log(a+b);
+        }
+        suma(6,7);
+   
+
+        //function almacenada en una variable
+        var resta=function(c,d){
+            return c-d;
+        }
+        console.log(resta(6,3));
+
+        // mismo proceso
+        var resta=function(c,d){
+            console.log(c-d);
+        }
+        resta(8,5);
+
+        //nueva forma 
+        // Arrow function - nueva forma en JavaScript
+        // ()=>  -- remplaza a la palabra function
+        //siempre y cuando lo almacene en una variable
+
+        var division=()=> {
+            console.log("HOLAA");
+        }
+        division();
+        
+    </script>
+</body>
+
+</html>

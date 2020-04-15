@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* BUCLES - repeticion basada en restricciones */
+
+        var miArray = [
+            "Katherine",
+            "Jean",
+            "Sergio",
+            "Jesus"
+        ]
+        console.log(miArray[1]);
+
+                    // primera forma
+        // inicio del bucle - la condicion - incremento
+        
+        for (var i = 0; i < miArray.length; i++) 
+        {
+            console.log(miArray[i]);            
+        }
+
+                    // segunda forma
+        // inicio del bucle - la condicion - incremento
+        var i=0;
+        while (i < miArray.length){
+            console.log(miArray[i]);
+            i++;
+        }
+
+        /* BUCLES PARA RECORRER UN OBJECT */
+        var objeto ={
+            curso:"Desarrollo Web Frontend",
+            numeroAlumnos:3,
+            fecha: new Date()
+        }
+        
+        //se crea una variable i que recorrera el objeto
+        for(var i in objeto){
+        //    console.log(objeto[i]);
+        //si el valor del curso es "Desarrollo Web Frontend", porconsola imprima: el curso es muy chevere, sino :c//
+      
+            if(objeto.curso=="Desarrollo Web Frontend"){
+                console.log("el curso es chevere");
+            }
+            else{
+                console.log(":c")
+            }
+        }
+        
+
+
+    </script>
+</body>
+</html>
