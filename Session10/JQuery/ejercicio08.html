@@ -11,11 +11,9 @@
             background-color: springgreen;
         }
     </style>
-
 </head>
 
 <body>
-
     <button id="btn">boton</button>
     <div class="box"></div>
 
@@ -27,20 +25,22 @@
             crossorigin="anonymous">
     </script>
     <script>
+
+        //EVENTO - distintas interacciones realizadas por el usuario
         //relacionar un evento al html
+
+        //relacionar al evento on click
+        //el evento on necesita de 2 parametros ( "string-nombre del evento", function())
         $(document).ready(function(){
-            $("#btn").on("click", function(){
-                alert("HOLAAAAAAAAAAA");
+            $("#btn").on("click",function(){
+                alert("el mouse esta encima de la caja ");
+            }); 
+            
+            $(".box").on("mouseover",function(){
+                console.log("el mouse esta encima de la caja ");
             });
 
-            $(".box").on("mouse-over", function(){
-                alert("Bieeeeeennn")
-            })
         });
-
-
-
-
 
     </script>
 </body>

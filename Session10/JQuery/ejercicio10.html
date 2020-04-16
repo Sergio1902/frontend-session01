@@ -14,15 +14,15 @@
         }
         p{
             color: firebrick;
-            display: none;
+            /* display: none; */
         }
     </style>
 </head>
 <body>
-    <div >
+    <div id="box">
         Pasar el mouse sobre el elemento
     </div>
-    <p>Ahora quite el mouse del elemento</p>
+    <p id="mensaje"></p>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -31,12 +31,18 @@
 
     <script>
         $(document).ready(function(){
-           $("div").on("mouseenter",function(){
-               $("p").show(500);
-           });
-           $("div").on("mouseleave",function(){
-               $("p").show(500);
-           });
+            $("#box").on("mouseenter",function(){
+                //o se puede utilizar el evento show -- remplaza al display block
+                //siempre y cuando el p este en display none
+                //show ( se le puede indicar el tiempo de demora ) 
+                // $("#mensaje").show();
+                $("#mensaje").html("Quite el mouse de encima");
+            });
+            $("#box").on("mouseleave",function(){
+                //hide ( se le puede indicar el tiempo de demora ) 
+                // $("#mensaje").hide();
+                $("#mensaje").html(""); 
+            });
         });
     </script>
 
